@@ -80,8 +80,8 @@ def index():
 @app.route("/auth/register", methods=['POST'])
 def register():
     if request.method == "POST":
-        firstname = request.json.get("firstname")
-        lastname = request.json.get("lastname")
+        firstname = request.json.get("firstName")
+        lastname = request.json.get("lastName")
         password = request.json.get("password")
         email = request.json.get("email")
         phone = request.json.get("phone")
