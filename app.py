@@ -136,7 +136,11 @@ def register():
                 "message": "Registration failed",
                 "statusCode": "400"
             }),400
-        token = create_access_token(identity={"user": user.email})  
+        token = create_access_token(
+                    identity={
+                        "user": user.email, 
+                        "id": user.userId
+                        })
         return jsonify({
             "status": "success",
             "message" : "registration successful",
