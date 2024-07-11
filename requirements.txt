@@ -4,4 +4,4 @@ Flask-SQLAlchemy
 requests
 SQLAlchemy
 Werkzeug
-psycopg2
+psycopg2-binary
