@@ -1,9 +1,6 @@
 from flask import Flask, request, flash, jsonify, render_template
 from werkzeug.security import check_password_hash, generate_password_hash
 from flask_sqlalchemy import SQLAlchemy
-import psycopg2
-import psycopg2.extras
-from functools import wraps
 from flask_jwt_extended import (
     JWTManager, jwt_required, create_access_token, get_jwt_identity)
 from datetime import datetime, timedelta
