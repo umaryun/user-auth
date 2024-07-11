@@ -70,7 +70,10 @@ with app.app_context():
 
 @app.route("/")
 def index():
-    return "this is the home page"
+    return jsonify({
+        "location": "home",
+        "mesage": "This is the home page"
+    })
 
 
 
